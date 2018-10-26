@@ -1,0 +1,58 @@
+<script src="script/jquery-3.2.1.min.js"></script>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="loginBox">
+        <select id="employeeSelect">
+            <option selected value="0">---</option>        
+        </select>
+
+        <table id="employeeTable">
+            
+        </table>
+    </div>
+
+<div id="employeePanel">
+    <button id="logOut">Wyloguj</button><br/>
+    <button id="checkIn">Wbij przyjscie do pracy</button><br/>
+    <button id="checkOut">Wbij wyjcie z pracy</button><br/>
+
+    <select id="removeEmployeeSelect">
+        <option selected value="0">---</option>        
+    </select><br/>
+    <button id="removeEmployee">Usun pracownika</button><br/>
+    <button id="addEmployee">Dodaj pracownika</button><br/>
+
+    <hr/>
+
+    <select id="bookingSelect">
+        <option selected value="0">---</option>        
+    </select>
+    <button id="checkInBooking">Zamelduj</button><br/>
+    <button id="checkOutBooking">Wymelduj</button><br/>
+    <button id="changeBooking">Zmien rezerwacje</button><br/>
+    <button id="closeBooking">Zamknij rezerwacje</button><br/>
+    <button id="showTotalCostBooking">Pokaz calkowity koszt rezerwacji</button><br/>
+
+    <table id="showCostTable">
+            
+        </table>
+
+    <hr/>    
+
+    <select id="extrasSelect">
+        <option selected value="0">---</option>        
+    </select><br/>
+    <button id="showBookingWithExtras">Pokaz liczbe aktywnych rezerwacji z danym dodatkiem</button>
+    
+    <table id="showBookingsTable">
+            
+        </table>
+</div>
+</body>
+
+<script src="script/employeePage.js"></script>

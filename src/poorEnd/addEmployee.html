@@ -1,0 +1,28 @@
+<script src="script/jquery-3.2.1.min.js"></script>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+
+<body>
+
+
+        <div id="employeePanel" class="hidden">
+            <button id="logOut">Wyloguj</button><br/>
+    </div>
+    <div id="notLogged" class="hidden">
+        Aby zmienic rezerwacje musisz byc zalogowany na konto przynajmniej kierownika
+    </div>
+    <hr>
+   <div>
+        <label for="firstname">Imię: </label><input name="firstname" id="firstname" type="text"></input><br/>
+        <label for="surname">Nazwisko: </label><input name="surname" id="surname" type="text"></input><br/>
+        <label for="bankAccountNumber">Numer bankowy: </label><input name="bankAccountNumber" id="bankAccountNumber" type="text"></input><br/>
+        <select id="roleSelect" class="canChange">      
+            </select><br/>
+        <button id='add'>Dodaj</button>
+    </div>
+</body>
+
+<script src="script/addEmployee.js"></script>

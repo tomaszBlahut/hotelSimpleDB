@@ -1,0 +1,29 @@
+<script src="script/jquery-3.2.1.min.js"></script>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+
+<body>
+
+
+        <div id="employeePanel" class="hidden">
+            <button id="logOut">Wyloguj</button><br/>
+    </div>
+    <div id="notLogged" class="hidden">
+        Aby zmienic rezerwacje musisz byc zalogowany na konto przynajmniej kierownika
+    </div>
+   <div>
+        <select id="roomSelect" class="canChange">      
+        </select><br/>
+        <label for="startDate">Data poczatku: </label><input type="text" id="startDate" placeholder="DD-MM-YYYY" class="canChange"/><br/>
+        <label for="endDate">Data końca: </label><input type="text" id="endDate" placeholder="DD-MM-YYYY" class="canChange"/><br/>
+        <div id="extras">
+
+        </div>
+        <button id='change'>Zmien rezerwacje</button>
+    </div>
+</body>
+
+<script src="script/changeBooking.js"></script>
